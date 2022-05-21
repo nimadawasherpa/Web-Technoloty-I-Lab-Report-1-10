@@ -1,0 +1,57 @@
+<!--
+	Q1. Create constructor function names student having properties id, name, program
+	and a normar function within it to display the id, name and program. Create two objects
+	from this constructor function and pass value and display the result by calling name function
+	within constructor function.
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background-color:blue;
+			}
+			#header{
+				height:300px;
+				background-color:gray;
+			}
+			
+			h1{
+				text-align:center;
+				color:red;
+				padding:10px 10px 10px 10px ;
+			}
+			
+			p{
+				font-size:50px;
+				color:green;
+				text-align:center;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id = "header">	
+			<h1>Constructor Function</h1>
+			<p id ="Students"></p>
+		</div>
+	</body>
+	<script>
+	//constructor function
+		function Student(id, name, program){
+			this.sid = id;
+			this.sname = name;
+			this.sprogram = program;
+		}
+		
+	//object function
+		const firstStudent = new Student(1,"Hari","BIT");
+	
+	//second object function
+		const secondStudent = new Student(2,"Ram","BIT");
+	
+	// Display age
+		document.getElementById("Students").innerHTML =firstStudent.sid + " " + firstStudent.sname + " " + firstStudent.sprogram; 
+	</script>
+</html>
