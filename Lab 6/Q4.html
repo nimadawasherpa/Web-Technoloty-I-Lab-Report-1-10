@@ -1,0 +1,46 @@
+<!-- 4. Write a program in javascript using any three event handlers. -->
+
+<html>
+	<head>
+		<title>LAB 6 | Q4</title>
+	</head>
+	<body>
+		<html>
+     <body>
+          <script>  
+               function validateform()
+               {  
+                    var uname=document.myform.name.value;  
+                    var upassword=document.myform.password.value;  
+                    if (uname==null || uname=="")
+                    {  
+                         alert("Name cannot be left blank");  
+                         return false;  
+                    }
+                    else if(upassword.length<6)
+                    {  
+                         alert("Password must be at least 6 characters long.");  
+                         return false;  
+                    }  
+               }  
+               function emailvalidation()
+               {
+                    var a=document.myform.email.value
+                    if (a.indexOf("@")==-1)
+                    {
+                         alert("Please enter valid email address")
+                         document.myform.email.focus()
+                    }
+               }
+          </script>  
+     <body>  
+          <form name="myform" method="post" action="validpage.html" onsubmit="return validateform()">  
+               Email: <input type="text" size="20" name="email" onblur="emailvalidation()"><br>
+               User Name: <input type="text" name="name"><br>  
+               Password: <input type="password" name="password"><br>  
+               <input type="submit" value="Submit" >  
+          </form>  
+     </body>
+</html>
+	</body>
+</html>

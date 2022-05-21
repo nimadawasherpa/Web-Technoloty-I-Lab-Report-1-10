@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Javascript Input</title>
+		<style>
+			body{
+				background-color:gray;
+				width:100%;
+			}
+			
+			h1{
+				color:green;
+				text-align:center;
+			}
+			
+			div{
+				background-color:purple;
+				margin:auto;
+				width:200px;
+				height:150px;
+				border:2px solid;
+				border-color:white;
+			}
+			
+			#addition{
+				padding:5px;
+			}
+			
+			#v1,#v2,#sum,#Ans,#Anss{
+				width:150px;
+				margin-left:10%;
+				margin-top:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>Addition</h1>
+		<div id = "addition">
+			<input type = "text" placeholder = "Enter first value:" id = "v1"></input>
+			<input type = "text" placeholder = "Enter second value:" id = "v2"></input>
+			<button onclick = "Addition()" id = "sum">Sum</button>
+			<input type = "text" id = "Anss" placeholder = "Addition Is:"></input>
+			<p id = "Ans"></p>
+		</div>
+			<p id = "Ans">Answer:</p>
+	</body>
+	<script>
+		function Addition(){
+			var a = document.getElementById("v1").value;
+			var b = document.getElementById("v2").value;
+			c = a + b;
+			document.write(c);
+		}
+	</script>
+</html>

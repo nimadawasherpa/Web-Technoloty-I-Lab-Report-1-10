@@ -1,0 +1,31 @@
+<!--
+	Q3. Write a JQuery code to bind a click event with <div> where on alert box is
+	displayed whenever you click on any of the divs.
+-->
+
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <style>
+         .div{ margin:10px;padding:12px; border:2px solid #666; width:60px;}
+      </style>
+   </head>
+   <body>
+      <p>Click on any square to see the result:</p>
+		
+      <div class = "div" style = "background-color:blue;">ONE</div>
+      <div class = "div" style = "background-color:green;">TWO</div>
+      <div class = "div" style = "background-color:red;">THREE</div>
+   </body>
+   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+   </script>
+   <script type = "text/javascript">
+	 $(document).ready(function() {
+		 $("div").click(function(){
+			alert('Hi there!');
+		 });
+	 });
+   </script>
+</html>
+</html>

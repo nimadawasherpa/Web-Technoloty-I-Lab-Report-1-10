@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Second Lab</title>
+	</head>
+	<body>
+		<h1>Second Lab</h1>
+		<form>
+		  <lable>Username:</lable>
+		  <input type = "text"></input><br><br>
+		  <lable>Password:</lable>
+		  <input type = "password"></input><br><br>
+		  <a href = "www.google.com"><input type = "submit" value = "Login"></input></a>
+		</form>
+	
+	</body>
+</html>
+		

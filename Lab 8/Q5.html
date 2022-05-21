@@ -1,0 +1,46 @@
+<!--  5. Write a Javascript program that prompt the user to enter his her UserName and Password and
+		1. If UserName is not entered: Display “Enter UserName”
+		2. If Password is not entered: Display enter password
+		3. If both UserName and Password is not entered: Display Enter UserName/pass word
+		4. If UserName equals “admin” and Password equals “admin123” Display: Welcome you are logged In
+		Otherwise: Display “Sorry try again”  -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 8 | Q5</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<p>Enter Username and Password <br> Username:admin <br> Password:admin123</p>
+		<button onclick="promptFunction()">Ok</button>
+		<p id="prompt"></p>
+	</body>
+	<script>
+		function promptFunction() {
+			let username = "admin";
+			let password = "admin123";
+			let empty = "";
+			let User = prompt("Username", "",);
+			let Pwd = prompt("Password", "");
+			if (User != empty) {
+				if (Pwd != empty){
+					if (User == username && Pwd == password) {
+						document.getElementById("prompt").innerHTML = "Welcome you are logged in.";
+					}
+					else {
+						document.getElementById("prompt").innerHTML = "Sorry try again.";
+					}
+				}
+				else {
+					document.getElementById("prompt").innerHTML = "Enter Password.";
+				}
+			}
+			else{
+				document.getElementById("prompt").innerHTML = "Enter Username";	
+			}
+		}
+	</script>
+</html>

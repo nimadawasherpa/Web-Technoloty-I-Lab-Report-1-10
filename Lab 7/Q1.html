@@ -1,0 +1,42 @@
+<!-- 1. Write a program in Javascript to ask the user to enter marks, and display
+	 the grade as shown below. -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 7 | Q1</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<lable>Enter marks your marks</lable>
+		<input type = "number" id = "marks"></input>
+		<input type = "button" value = "Enter" onclick = "marks()"></input><br><br>
+		<lable>Your grade</lable>
+		<input type = "text" id = "value"></input>
+	</body>
+	<script>
+		function marks(){
+			var val = document.getElementById("marks").value;
+			if (val <= 100 && val >= 80){
+				document.getElementById("value").value = ("A");
+			}
+			else if (val <= 79 && val >= 60){
+				document.getElementById("value").value = ("B");
+			}
+			else if (val <= 59 && val >= 50){
+				document.getElementById("value").value = ("C");
+			}
+			else if (val <= 49 && val >= 40){
+				document.getElementById("value").value = ("D");
+			}
+			else if (val <= 39 && val >= 0){
+				document.getElementById("value").value = ("F");
+			}
+			else{
+				document.getElementById("value").value = ("Invalid marks.");
+			}
+		}
+	</script>
+</html>

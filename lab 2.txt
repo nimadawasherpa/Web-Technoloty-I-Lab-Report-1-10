@@ -1,0 +1,302 @@
+File name: Q1.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 1 | lab 2 </title>
+	</head>
+	 <h1> Html Frame </h1>
+	 <frameset cols ="40%,30%,30%">
+		<frameset rows ="50%,50%">
+			<frame src = "1.html">
+			<frame src = "2.html">
+		</frameset>
+		<frameset rows ="50%,50%">
+			<frame src = "3.html">
+			<frame src = "4.html">
+		</frameset>
+		<frame src = "5.html">
+	 </frameset>
+	<noframes>
+		<body> Your browser doesn't support frameset </body>
+	</noframes>
+</html>
+
+
+Link File name:1.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> frame 1 </title>
+		<style>
+			body {
+				background-color: red;
+				height:500px;
+			}
+		</style>
+	</head>
+	<body>
+	 <h1> frame 1 </h1>
+	</body>
+</html>
+
+Link File name:2.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> frame 2 </title>
+		<style>
+			body {
+				background-color: yellow;
+				height:500px;
+			}
+		</style>
+	</head>
+	<body>
+	 <h1> frame 2 </h1>
+	</body>
+</html>
+
+Link File name:3.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> frame 3 </title>
+		<style>
+			body {
+				background-color: green;
+				height:500px;
+			}
+		</style>
+	</head>
+	<body>
+	 <h1> frame 3 </h1>
+	</body>
+</html>
+
+
+Link File name:4.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> frame 4 </title>
+		<style>
+			body {
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+	 <h1> frame 4 </h1>
+	</body>
+</html>
+
+Link File name:5.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 1 | lab 2 </title>
+		<style>
+			body {
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+	 <h1> Page 1 </h1>
+	</body>
+</html>
+
+
+
+File Name:Q2.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 2 | lab 2 </title>
+	</head>
+	<body>
+	 <h1> Figure and Caption </h1>
+	 <figure>
+		<img src = "Desert.jpg" type = "image/jpg" alt = "Image doesn't support">
+	<figcaption> The figure and figrecaption element </figcaption>
+	 </figure>
+	</body>
+</html>
+
+
+File Name:Q3.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 3 | lab 2 </title>
+		<style>
+		#first {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid red;
+		}
+		#second {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid green;
+		}
+		#third {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid rellow;
+		}
+		</style>
+	</head>
+	 <h1> Border proporties in div </h1>
+	 <div id = "first"></div>
+	 <div id = "second"></div>
+	 <div id = "third"></div>
+</html>
+
+File Name:Q4.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 4 | lab 2 </title>
+		<style>
+		#first {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid red;
+			padding-top:10px;
+		}
+		#second {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid green;
+			padding-left:10px;
+		}
+		#third {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid rellow;
+			padding-right:10px;
+		}
+		#fourth {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid rellow;
+			padding-bottom:10px;
+		}
+		</style>
+	</head>
+	 <h1> padding proporties in div </h1>
+	 <div id = "first">This is the Text.</div>
+	 <div id = "second">This is the Text.</div>
+	 <div id = "third">This is the Text.</div>
+	 <div id = "fourth">This is the Text.</div>
+</html>
+
+
+File name:Q5.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 5 | lab 2 </title>
+		<style>
+		div {
+			height:500px;
+			width:500px;
+			background-color:gray;
+			border:5px solid red;
+			margin:20px 20px 20px 20px;
+		}
+		</style>
+	</head>
+	 <h1> Margin Properties </h1>
+	 <div ></div>
+</html>
+
+File name:Q6.html
+
+<!doctype html>
+<html>
+	<head>
+		<title> Question 6 | lab 2 </title>
+		<style>
+			p {color: red;}
+			p.ex1 {display: none;}
+			p.ex2 {display: inline;}
+			p.ex3 {display: block;}
+			p.ex4 {display: inline-block;}
+		</style>
+		</head>
+		<body>
+<			<h1>The display Property</h1>
+
+			<h2>display: none:</h2>
+				<div>
+					This is non block properties <p class="ex1">HELLO WORLD!</p> used.
+				</div>
+
+			<h2>display: inline:</h2>
+				<div>
+					This is inline block properties <p class="ex1">HELLO WORLD!</p> used.
+				</div>
+
+			<h2>display: block:</h2>
+				<div>
+					This is block properties <p class="ex1">HELLO WORLD!</p> used.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex3">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+
+			<h2>display: inline-block:</h2>
+				<div>
+					This is inline-block properties <p class="ex1">HELLO WORLD!</p> used.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p class="ex4">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+				</div>
+		</body>
+</html>
+
+
+File name:Q7.html
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Question 7 | lab 2 </title>
+		<style>
+			#first {
+				opacity: 0.1;
+			}
+			#second {
+				opacity: 0.5;
+			}
+			#third {
+				opacity: 0.8;
+			}
+		</style>
+	</head>
+	<body>
+
+	<h1>Image Transparency</h1>
+	<p>Image with 10% opacity:</p>
+	<img id="first" src="Desert.jpg" alt="Desert" width="170" height="100">
+	
+	<p>Image with 50% opacity:</p>
+	<img id="second" src="Desert.jpg" alt="Desert" width="170" height="100">
+	
+	<p>Image with 80% opacity:</p>
+	<img id="third" src="Desert.jpg" alt="Desert" width="170" height="100">
+	</body>
+</html>

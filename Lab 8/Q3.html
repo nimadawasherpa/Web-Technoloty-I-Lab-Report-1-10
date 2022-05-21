@@ -1,0 +1,91 @@
+<!--  3. Write the Javascript program to display the following output(Use switch statement)   -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 8 | Q3</title>
+		<style>
+			body{
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	<body>
+		<p>This page says: <br> Select your choice (1-7):</p>
+		<ol>
+			<li>Sunday</li>
+			<li>Monday</li>
+			<li>Tuesday</li>
+			<li>Wednesday</li>
+			<li>Thursday</li>
+			<li>Friday</li>
+			<li>Saturday</li>
+		</ol>
+		<input type = "number" id = "inputs" value = "2"></input>
+		<input type = "button" id = "submit" onclick = "choice()" value = "Display Holiday or Not"></input><br>
+		<input type = "text" id = "message"></input>
+	</body>
+	<script>
+		function choice(){
+			var val = document.getElementById("inputs").value;
+			//var val = 7;
+			//var add = (val + val);
+			//A = val.match(/[1-6]/g);
+			//console.log(A);
+			switch(true){
+			//using regular expression garna mildaina mam  
+				//if use condition we write switch(true)
+					case ((val >= 1) && (val <= 6)):
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break; 	
+				
+					
+			/*
+				//we write switch(val)
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+
+
+			case 1:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 2:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 3:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 4:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 2:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 5:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;
+					
+				case 6:
+					document.getElementById("message").value = "Sad, Today is not holiday.";
+					break;   */
+					
+				case (val == 7):
+					document.getElementById("message").value = "Hurry, Today is holiday.";
+					break;
+				default:
+					document.getElementById("message").value = "Invalid! Input.";
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,56 @@
+<!-- 4.Write a Javascript program that changes the background color of <div> element on user click.    -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 8 | Q4</title>
+		<style>
+			div{
+				height:50px;
+				border:2px solid;
+				border-color:black;
+				margin:10px 10px 10px 10px;
+				text-align:center;
+				padding-top:25px;
+				font-weight:bold;
+				color:red;
+			}
+			
+			#content1 {
+				background-color:green;
+			}
+			
+			#content2 {
+				background-color:gray;
+			}
+			
+			#content3 {
+				background-color:blue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id = "content1" onclick = "changeColor1">div 1</div>
+		<div id = "content2" onclick = "changeColor2">div 2</div>
+		<div id = "content3" onclick = "changeColor3">div 3</div>
+		<button type = "button" onclick = "changeColor1()">Change background of Div 1</button>
+		<button type = "button" onclick = "changeColor2()">Change background of Div 2</button>
+		<button type = "button" onclick = "changeColor3()">Change background of Div 3</button>
+	</body>
+	<script>
+		function changeColor1() {
+			document.getElementById("content1").style.backgroundColor = "red";
+			document.getElementById("content1").style.color = "black";
+		}
+		
+		function changeColor2() {
+			document.getElementById("content2").style.backgroundColor = "red";
+			document.getElementById("content2").style.color = "black";
+		}
+		
+		function changeColor3() {
+			document.getElementById("content3").style.backgroundColor = "red";
+			document.getElementById("content3").style.color = "black";
+		}
+	</script>
+</html>

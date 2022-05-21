@@ -1,0 +1,64 @@
+<!--
+Q2. Create a simple calculator having addition(+), substraction(-), multiplication(*), division(/) buttons and one reset button
+to reset the entered number in the two text fields. Where user input the numbers and click the respective buttons to do the calculation and display the result. 
+-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SIMPLE CALCULATOR</title>
+		<style>
+			body{
+				background-color:gray;
+			}
+			
+			h1{
+				text-align:center;
+				color:white;
+			}
+			
+			div,#Calculator{
+				text-align:center;
+				height:150px;
+				width:300px;
+				padding:50px 50px 50px 50px;
+				margin:auto;
+				background-color:green;
+			}
+			
+			#opt,#submit{
+				padding:5px 20px 5px 20px;
+			}
+			
+			#result{
+				width:50px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Simple calculator using JS</h1>
+		<div id = "Calculator">
+			<input type ="number" id ="input1" value = "2" required></input> <br><br>
+			<input type ="number" id ="input2" value = "2"  required></input><br><br>
+			<select id="opt">
+				<option>+</option>
+				<option>-</option>
+				<option>*</option>
+				<option>/</option>
+			</select>
+			<button type ="submit" id ="submit" onclick ="Calculator()">Calculate</button><br><br>
+			<p id ="value"></p>
+		</div>
+	</body>
+	<script>
+		function Calculator(){
+			var input1 = document.getElementById("input1").value;
+			var input2 = document.getElementById("input2").value;
+			var opt = document.getElementById("opt").value;
+			var ans = eval(input1 + opt + input2);
+			//console.log("Hello world!");
+			//console.log(ans);
+			document.getElementById("value").innerHTML = ans;
+		}
+	</script>
+</html>

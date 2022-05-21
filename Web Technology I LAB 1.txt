@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Lab 1 | Question 1 </title>
+	</head>
+	<body>
+		<h1> HTML TAGS </h1>
+		<h2> ANCHOR TAGS </h2>
+		<a href = "newpage.html"><p>GOTO NEW PAGE..</p></a>
+		<h2> ORDER LIST </h2>
+		<ol>
+			<li> One </li>
+			<li> Two </li>
+			<li> Three </li>
+		</ol>
+		<h2> UNORDER LIST </h2>
+		<ul>
+			<li> Ram </li>
+			<li> Hari </li>
+			<li> Shyam </li>
+		</ul>
+		
+		<h2> PARAGRAPH | BOLD | ITALIC | UNDERLINE | BREAK </h2>
+		<p> This is our <b> first lab's </b> <u> first question </u>. <br>
+		In this lab we used different <i> HTML </i> tags. </p>
+		
+		<h2> AUDIO </h2>
+		<audio controls>
+			<source src="Samsung ringtone.mp3" type="audio/mpeg" alt = "Your browser does not support the audio element.">
+		</audio>
+		<h2> VIDEO </h2>
+		<video controls>
+			<source src="Dui Din Ko Maya [Female Version] [Re-Upload] - Asmita Adhikari - Bijay Dong - Urgen Dong - ANXMUS.mp4" type="video/mp4" alt = "Your browser does not support the video element.">
+		</video>
+		
+		<h2> IMAGE </h2>
+		<img>
+			<img src="logo.jpg" type="image/jpg" alt = "Your browser does not support the image element.">
+		</img>
+	</body>
+</html>
+
+
+<!doctype html>
+<html>
+	<head>
+		<title> Lab 1 | Question 2 </title>
+	</head>
+	<body>
+		<h1> POWER AND BASE </h1>
+		<ol>
+			<li> One<sub>1</sub> </li>
+			<li> Two<sup>2</sup> </li>
+		</ol>
+	</body>
+</html>
+
+
+<!doctype html>
+<html>
+	<head>
+		<title> Lab 1 | Question 3 </title>
+	</head>
+	<body>
+		<h1> TABLES </h1>
+		<table border = "1">
+			<tr>
+				<th> ID </th>
+				<th> NAME </th>
+				<th> ADDRESS </th>
+				<th> MOBILE NO. </th>
+				<th> EMAIL </th>
+				<th> EXPRIENCE </th>
+				<th> PROFILE IMAGE </th>
+			</tr>
+			<tr>
+				<td> 1 </td>
+				<td> Ram Shrestha </td>
+				<td> Kathmandu </td>
+				<td> 9812345678 </td>
+				<td> ram@gmail.com </td>
+				<td> 3 years </td>
+				<td> <a href = "image1.jpg"> PROFILE IMAGE </a></td>
+			</tr>
+			<tr>
+				<td> 2 </td>
+				<td> Hari Shrestha </td>
+				<td> Kathmandu </td>
+				<td> 9812345679 </td>
+				<td> hari@gmail.com </td>
+				<td> 3 years </td>
+				<td> <a href = "image2.jpg"> PROFILE IMAGE </a></td>
+			</tr>
+		</table>
+	</body>
+</html>

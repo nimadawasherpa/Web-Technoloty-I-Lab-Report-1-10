@@ -1,0 +1,35 @@
+body{
+	background-color:Gray;
+}
+
+h1{
+	text-align:center;
+	color:red;
+}
+
+table{
+	table-background-color:Green;
+	table-width:100px;
+	border:1px solid black;
+	border-collapse:collapse;
+	
+}
+
+th{
+	color:Green;
+	text-align:center;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+	
+td{
+	color:white;
+	padding:10px;
+	text-align:center;
+	border:1px solid black;
+	border-collapse:collapse;
+}
+
+p{
+	text-align:center;
+}

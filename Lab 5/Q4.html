@@ -1,0 +1,63 @@
+<!--4. Create HTML form as below and validate   -->
+	
+<! DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			#form1{
+				height:150px;
+				width:300px;
+				border:1px solid;
+				margin:100px 200px 50px;
+				padding:50px 50px 50px 50px;
+			}
+			input{
+				border:1px solid;
+			}
+			#lab1{
+				margin-right:60px;
+			}
+			
+			#lab2{
+				margin-right:40px;
+			}
+			
+			#lab3{
+				margin-right:30px;
+			}
+			
+			button{
+				margin-left:100px;
+				margin-top:30px;
+				width:100px;
+				height:30px;
+			}
+		</style>
+	</head>
+	<body>	
+		<form name="form" id = "form1" action="#"> 
+			<label id = "lab1">Email:      </label><input type = "text"  name = "email" placeholder = "Enter Email" id = "email" required></input> <br><br>
+			<label id = "lab2">Password:   </label><input type = "text" name = "password" placeholder = "Enter Password" id = "password"></input> <br><br>
+			<label id = "lab3">Mobile No.: </label><input type = "number" name = "mobile"  placeholder = "Enter Mobile Number" id = "mobile"></input> <br><br>
+			<button type = "submit" onclick = "validate(document.form1.email)" >Submit</button>
+		</form>
+	</body>
+	<script>
+	function validate(emailId)
+	{
+		var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+		if(emailId.value.match(mailformat))
+		{
+			document.form1.text1.focus();
+			return true;
+		}
+		else
+		{
+			alert("Invalid email address.");
+			document.form1.text1.focus();
+			return false;
+		}
+	} 
+	</script>
+</html>

@@ -1,0 +1,29 @@
+<!--  2. Write a Javascript code to determine an input number is Even or Odd using conditional operator.   -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 8 | Q2</title>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<h3>Check your number is Even or Odd</h3>
+		<input type = "number" id = "val"></input>
+		<button type = "submit" id = "submit" onclick = "check()">Checked</button> <br><br>
+		<p id = "numberType"></p>
+	</body>
+	<script>
+		function check(){
+			var value = document.getElementById("val").value;
+			//document.write(value);
+			if (value % 2 == 0){
+				document.getElementById("numberType").innerHTML = "Even Number";
+			}
+			else{
+				document.getElementById("numberType").innerHTML = "Odd Number";
+			}
+		}
+	</script>
+</html>

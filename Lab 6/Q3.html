@@ -1,0 +1,17 @@
+<!-- 3. Write HTML code to create page containing two frames with first frame
+	covering 30% of first screen(horizontal coverage).First frame should
+	contain list of files and on clicking their files must be displayed in second
+	frame. -->
+
+<html>
+	<head>
+		<title>LAB 6 | Q3</title>
+	</head>
+	 <frameset rows = "30%, 70%">
+        <frame name = "first" src = "frame_1.html" />
+        <frame name = "second" src = "frame_2.html" />
+        <noframes>
+            <body>The browser you are working does not support frames.</body>
+        </noframes>
+    </frameset>
+</html>

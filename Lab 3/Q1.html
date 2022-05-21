@@ -1,0 +1,213 @@
+
+<!-- Q.Wtite a javascript program to show the following opeerators
+	.Assignment Operator
+	.Comparison Operator
+	.String Operator
+	.Arithmetic Operator
+	.Bitwise Operator
+	.Logical Operator
+	.Conditional(ternary) Operator
+	.Unary Operator
+	.Relation Operator
+-->
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Lab 3 | Question 1</title>
+		<script src="Q1.js"></script>
+		<link rel="stylesheet" href="Q1.css">
+	</head>
+	<body>
+		<h1>Operator show in Javascript</h1>
+		<table>
+			<tr>
+				<th colspan="5">Arithmetic Operator</th>
+			</tr>
+			<tr>
+				<td>Operator</td>
+				<td>Name</td>
+				<td>Description</td>
+				<td>Example</td>
+				<td>A = 10 and B = 2</td>
+			</tr>
+			<tr>
+				<td>+=</td>
+				<td>Addition</td>
+				<td>Adds together two values</td>
+				<td>A + B</td>
+				<td><button type="button" onclick="add()">Answer</button><p id="Ans1"></p></td>
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>Subtraction</td>
+				<td>Subtract together two values</td>
+				<td>A - B</td>
+				<td><button type="button" onclick="sub()">Answer</button><p id="Ans2"></p></td>
+			</tr>
+			<tr>
+				<td>*td>
+				<td>Multiplication</td>
+				<td>Multiply together two values</td>
+				<td>A * B</td>
+				<td><button type="button" onclick="mul()">Answer</button><p id="Ans3"></p></td>
+			</tr>	
+			<tr>
+				<td>/</td>
+				<td>Division</td>
+				<td>Divide together two values</td>
+				<td>A / B</td>
+				<td><button type="button" onclick="division()">Answer</button><p id="Ans4"></p></td>
+			</tr>
+			<tr>
+				<td>%</td>
+				<td>Modules</td>
+				<td>Module together two values</td>
+				<td>A % B</td>
+				<td><button type="button" onclick="mod()">Answer</button><p id="Ans5"></p></td>
+			</tr>
+			<tr>
+				<td>++</td>
+				<td>Increment</td>
+				<td>Increment values</td>
+				<td>++A</td>
+				<td><button type="button" onclick="increment()">Answer of A</button><p id="Ans6"></p></td>
+			</tr>
+			<tr>
+				<td>--</td>
+				<td>Decrement</td>
+				<td>Decrement values</td>
+				<td>--A</td>
+				<td><button type="button" onclick="decrement()">Answer of A</button><p id="Ans7"></p></td>
+			</tr>
+		</table>
+	    <br><br>
+		<table>
+			<tr>
+				<th colspan="4">Assignment Operator</th>
+			</tr>
+			<tr>
+				<td>Operator</td>
+				<td>Example</td>
+				<td>Same As</td>
+				<td>A = 5</td>
+			</tr>
+			<tr>
+				<td>=</td>
+				<td>A = 5</td>
+				<td>A = 5</td>
+				<td><button type="button" onclick="Assignment_op1()">Answer</button><p id="aa1"></p></td>
+			<tr>
+				<td>+=</td>
+				<td>A += 5</td>
+				<td>A = A + 5</td>
+				<td><button type="button" onclick="Assignment_op2()">Answer</button><p id="aa2"></p></td>
+			</tr>
+			<tr>
+				<td>-=</td>
+				<td>A -= 5</td>
+				<td>A = A - 5</td>
+				<td><button type="button" onclick="Assignment_op3()">Answer</button><p id="aa3"></p></td>
+			</tr>
+			<tr>
+				<td>*=</td>
+				<td>A *= 5</td>
+				<td>A = A * 5</td>
+				<td><button type="button" onclick="Assignment_op4()">Answer</button><p id="aa4"></p></td>
+			</tr>	
+			<tr>
+				<td>/=</td>
+				<td>A /= 5</td>
+				<td>A = A / 5</td>
+				<td><button type="button" onclick="Assignment_op5()">Answer</button><p id="aa5"></p></td>
+			</tr>
+			<tr>
+				<td>|=</td>
+				<td>A |= 5</td>
+				<td>A = A | 5</td>
+				<td><button type="button" onclick="Assignment_op6()">Answer</button><p id="aa6"></p></td>
+			</tr>
+			<tr>
+				<td>^=</td>
+				<td>A ^= 5</td>
+				<td>A = A ^ 5</td>
+				<td><button type="button" onclick="Assignment_op7()">Answer</button><p id="aa7"></p></td>
+			</tr>
+			<tr>
+				<td><<=</td>
+				<td>A <<= 5</td>
+				<td>A = A << 5</td>
+				<td><button type="button" onclick="Assignment_op8()">Answer</button><p id="aa8"></p></td>
+			</tr>
+			<tr>
+				<td>>>=</td>
+				<td>A >>= 5</td>
+				<td>A = A >> 5</td>
+				<td><button type="button" onclick="Assignment_op9()">Answer</button><p id="aa9"></p></td>
+			</tr>
+		</table>
+		<br><br>
+		<table>
+			<tr>
+				<th colspan="4">Comparison Operator</th>
+			</tr>
+			<tr>
+				<td>Operator</td>
+				<td>Description</td>
+				<td>Comparison (A = 5)</td>
+				<td>Returns</td>
+			</tr>
+			<tr>
+				<td>==</td>
+				<td>equal to</td>
+				<td>A == 5</td>
+				<td><p id="cc1"></p></td>
+			<tr>
+				<td>===</td>
+				<td>equal value and equal type</td>
+				<td>A === 5</td>
+				<td><button type="button" onclick="comparison_op2()">Answer</button><p id="cc2"></p></td>
+			</tr>
+			<tr>
+				<td>!=</td>
+				<td>not equal</td>
+				<td>A != 6</td>
+				<td><button type="button" onclick="comparison_op3()">Answer</button><p id="cc3"></p></td>
+			</tr>
+			<tr>
+				<td>!==</td>
+				<td>not equal value or not equal type</td>
+				<td>A !== 5</td>
+				<td><button type="button" onclick="comparison_op4()">Answer</button><p id="cc4"></p></td>
+			</tr>	
+			<tr>
+				<td>></td>/td>
+				<td>greater than</td>
+				<td>A > 5</td>
+				<td><button type="button" onclick="comparison_op5()">Answer</button><p id="cc5"></p></td>
+			</tr>
+			<tr>
+				<td><</td>
+				<td>less than</td>
+				<td>A < 5</td>
+				<td><button type="button" onclick="comparison_op6()">Answer</button><p id="cc6"></p></td>
+			</tr>
+			<tr>
+				<td>>=</td>
+				<td>greater than or equal to</td>
+				<td>A >= 5</td>
+				<td><button type="button" onclick="comparison_op7()">Answer</button><p id="cc7"></p></td>
+			</tr>
+			<tr>
+				<td><=</td>
+				<td>A <= 5</td>
+				<td>A <= 5</td>
+				<td><button type="button" onclick="comparison_op8()">Answer</button><p id="cc8"></p></td>
+			</tr>
+		</table>
+	</body>
+</html>
+		
+
+		

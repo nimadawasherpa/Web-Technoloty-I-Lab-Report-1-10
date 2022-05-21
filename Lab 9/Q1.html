@@ -1,0 +1,67 @@
+<!--  1. Design a web page application for entering name,age,password, and email
+		address and also write a program in JavaScript for validate those entered
+		data when user clicks on submit button   -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>LAB 9 | Q1</title>
+		<style>
+			form {
+				border:5px solid;
+				border-color:green;
+				margin:auto;
+				height:300px;
+				width:300px;
+				padding-left:10px;
+			}
+			
+			h1 {
+				text-align:center;
+			}
+			
+			#age {
+				margin-left:45px;
+			}
+			
+			#password {
+				margin-left:5px;
+			}
+			
+			#email {
+				margin-left:30px;
+			}
+			
+			#submit {
+				margin-left:100px;
+				background-color:blue;
+				color:white;
+				width:100px;
+				height:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<h1>Sign in Form</h1>
+			<lable><b>Full Name:</b></lable>
+			<input type = "text" id = "name" placeholder = "Nima Sherpa"></input><br><br>
+			<lable><b>Age:</b></lable>
+			<input type = "number" id = "age" placeholder = "20"></input><br><br>
+			<lable><b>Password:</b></lable>
+			<input type = "password" id = "password"></input><br><br>
+			<lable><b>Email:</b></lable>
+			<input type = "email" id = "email"></input><br><br><br>
+			<button type = "button" id = "submit" onclick = "validationForm()">Sign In</button>
+		</form>
+	</body>
+	<script>
+		function validationForm(){
+			var Fname = document.getElementById("name").value;
+			var Age = document.getElementById("age").value;
+			var Pwd = document.getElementById("password").value;
+			var Email = document.getElementById("email").value;
+			document.write(Fname + "<br>" + Age + "<br>" + Pwd + "<br>" + Email);
+		}
+	</script>
+</html>

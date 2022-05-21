@@ -1,0 +1,41 @@
+<!-- 2. Define validation in web page.Design a sample web form using atleast three
+	form elements and write script code for validating those data which are
+	entered by the user. -->
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LAB 6 | Q2</title>	
+		<style>
+			form{
+				padding:5px 5px 5px 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<form name="form1" action="#">
+			<lable>Username:</lable><br>
+			<input type = "text" placeholder = "nima@gmail.com" id = "uname"  name='email'></input><br><br>
+			<lable>Password:</lable><br>
+			<input type = "password" id = "password"></input><br><br>
+			<input type="submit" name="submit" value="Login" onclick="validateEmail(document.form1.email)"></input>
+		</form>
+	</body>
+	<script> 
+		function validateEmail(emailId)
+		{
+			var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if(emailId.value.match(mailformat))
+			{
+				document.write("Login Successfull...");
+				return true;
+			}
+			else
+			{
+				alert("Invalid email address.");
+				document.form1.text1.focus();
+				return false;
+			}
+		}    
+	</script>
+</html>

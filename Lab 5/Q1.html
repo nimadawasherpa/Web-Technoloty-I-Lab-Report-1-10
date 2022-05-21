@@ -1,0 +1,42 @@
+<!--1. Write a program to show different popup boxes.
+	a. alert (display your name inside box when user execute the page)
+	b. prompt (input your name in input box and If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.)
+	c. confirm (display message “you want to continue” message when ok button is clicked and “you don’t want to continue” message when cancel button is clicked”)   -->
+	
+<! DOCTYPE html>
+<html>
+	<body>
+		<button onclick="Prompt()">Prompt Button</button><br><br>
+		<p id="PromptMesssage"></p>
+		<button onclick="Confirm()">Confirm Button</button>
+		<p id="ConformMesssage"></p>
+	</body>
+	<script>
+	
+		//for alert messagebox
+		alert("My Name is : Nima Sherpa");
+		
+		//for prompt messagebox
+		function Prompt() {
+		  var Message;
+		  var person = prompt("", "");
+		  if (person == null || person == "") {
+			text = "null"
+		  } else {
+			text = person;
+		  }
+		  document.getElementById("PromptMesssage").innerHTML = text;
+		}
+		
+		//for confirm messagebox
+		function Confirm() {
+		  var Message;
+		  if (confirm("Press a button!")) {
+			Message = "you want to continue...";
+		  } else {
+			Message = "you don’t want to continue..";
+		  }
+		  document.getElementById("ConformMesssage").innerHTML = Message;
+		}
+	</script>
+</html>

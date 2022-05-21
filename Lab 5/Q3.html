@@ -1,0 +1,17 @@
+<!--3. Write a program in JavaScript which copies the text from one textbox to second textbox within the form   -->
+	
+<! DOCTYPE html>
+<html>
+	<body>
+		<input type = "text" placeholder = "input text." id = "input" required></input>
+		<button onclick = "copy()" >Copy</button> <br><br>
+		<input type = "text" placeholder = "copied text." id = "copied">Nima Sherpa</input>
+	</body>
+	<script>
+		function copy() {
+		  /* Get the text field */
+		  var copyText = document.getElementById("input").value;
+		  document.getElementById("copied").value = copyText;
+		}
+	</script>
+</html>

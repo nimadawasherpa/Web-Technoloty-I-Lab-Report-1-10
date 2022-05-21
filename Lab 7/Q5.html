@@ -1,0 +1,29 @@
+<!-- 5. Write a JavaScript program that uses ‘onChange’ event handler to fine the area
+	of the circle after selecting the value of radius in drop down. [Keep upto 4
+	different radius values in drop down] -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LAB 7 | Q3</title>
+	</head>
+	<body>
+		<p>Select radius of circle from the list.</p>
+		<select id="mySelect" onchange="myFunction()">
+		  <option value="2">2</option>
+		  <option value="4">4</option>
+		  <option value="6">6</option>
+		  <option value="8">8</option>
+		</select>
+
+		<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("mySelect").value;
+		  var area = 3.14 * x * x;
+		  document.getElementById("demo").innerHTML = "Area of Circle: " + area;
+		}
+	</script>
+	</body>
+</html>
